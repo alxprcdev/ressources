@@ -91,3 +91,38 @@ footer ul a:hover {
   flex: 0 0 auto;  /* Set width to fit content, don't grow */
   margin-left: 20px; /* Add margin for spacing */
 }
+
+.services {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.services p {
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.services ul li h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services ul li p {
+  margin-bottom: 0;
+}
