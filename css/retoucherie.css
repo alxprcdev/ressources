@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header nav a:hover {
+  background-color: #666;
+}
+
+main {
+  padding: 20px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.presentation h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.presentation p {
+  margin-bottom: 20px;
+}
+
+.presentation img {
+  width: 50%;
+}
+
+.services, .tarifs, .contact {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.services ul, .tarifs ul, .contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li, .tarifs ul li, .contact ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  background-color: #666;
+}
