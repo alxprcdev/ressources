@@ -155,3 +155,46 @@ footer ul a:hover {
 .tarifs table th {
   text-align: center;
 }
+
+.contact {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+.contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact form textarea {
+  height: 100px;
+}
+
+.contact form button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #ccc;
+  cursor: pointer;
+}
