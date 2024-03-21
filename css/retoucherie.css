@@ -233,3 +233,52 @@ p {
         flex-direction: column;
     }
 }
+
+/* Style the slider section */
+.slider {
+  position: relative; /* Allows positioning of elements within the slider */
+  overflow: hidden; /* Hides overflowing content (useful for image transitions) */
+  margin: 20px auto; /* Add some margin for better presentation */
+  width: 80%; /* Define the width of the slider */
+}
+
+/* Style the slider container */
+.slider-container {
+  display: flex; /* Arrange images horizontally */
+  transition: transform 0.5s ease-in-out; /* Add smooth transition for image sliding */
+}
+
+/* Style the slider images */
+.slider-container img {
+  width: 100%; /* Set image width to fill the container */
+  object-fit: cover; /* Crop images to fit while maintaining aspect ratio */
+}
+
+/* Style the slider arrows */
+.slider-arrow {
+  position: absolute; /* Position arrows within the slider */
+  top: 50%; /* Center arrows vertically */
+  transform: translateY(-50%); /* Adjust vertical position for better alignment */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* White text color */
+  font-size: 2em; /* Increase font size for larger arrows */
+  padding: 10px; /* Add some padding for better click area */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+/* Style the "previous" arrow */
+.slider-arrow.prev {
+  left: 0; /* Position on the left side */
+}
+
+/* Style the "next" arrow */
+.slider-arrow.next {
+  right: 0; /* Position on the right side */
+}
+
+/* Apply hover effect to arrows (optional) */
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
