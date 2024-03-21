@@ -46,31 +46,3 @@ animerFooter();
 
 // Animer d'autres éléments de la page (optionnel)
 // ...
-
-// Remplacer "YOUR_API_KEY" par votre clé API Google Maps
-const apiKey = "AIzaSyBiyf0K2SL3k9iXh7cKB4mB7eo3g4jd39k";
-
-// Fonction pour initialiser la carte Google Maps
-function initMap() {
-  // Créer une instance de la carte Google Maps
-  const map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 48.91114150015425, lng: 2.523721396133323},
-    zoom: 14,
-  });
-
-  // Ajouter un marqueur à la carte
-  const marker = new google.maps.Marker({
-    position: {lat: 48.91114150015425, lng: 2.523721396133323},
-    map: map,
-  });
-
-  // Afficher l'infobulle du marqueur
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-}
-
-// Charger la bibliothèque Google Maps
-const googleMapsScript = document.createElement('script');
-googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
-document.body.appendChild(googleMapsScript);
