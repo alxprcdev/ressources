@@ -126,3 +126,32 @@ footer ul a:hover {
 .services ul li p {
   margin-bottom: 0;
 }
+
+.tarifs {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.tarifs h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tarifs p {
+  margin-bottom: 20px;
+}
+
+.tarifs table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tarifs table th,
+.tarifs table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.tarifs table th {
+  text-align: center;
+}
