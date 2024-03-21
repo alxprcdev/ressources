@@ -81,3 +81,13 @@ footer ul a {
 footer ul a:hover {
   background-color: #666;
 }
+
+.contact {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: row; /* Arrange elements side-by-side */
+}
+
+.map {
+  flex: 0 0 auto;  /* Set width to fit content, don't grow */
+  margin-left: 20px; /* Add margin for spacing */
+}
