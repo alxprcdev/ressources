@@ -1,0 +1,42 @@
+/* Styles pour le slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-arrow.prev {
+    left: 0;
+}
+
+.slider-arrow.next {
+    right: 0;
+}
+
+/* Effet de survol sur les flèches */
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
