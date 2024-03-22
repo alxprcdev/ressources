@@ -277,6 +277,34 @@ p {
   right: 0; /* Position on the right side */
 }
 
+const slider = document.querySelector('.slider');
+const sliderContainer = document.querySelector('.slider-container');
+const prevBtn = document.querySelector('.slider-arrow.prev');
+const nextBtn = document.querySelector('.slider-arrow.next');
+const images = sliderContainer.querySelectorAll('img');
+
+let currentSlide = 0;
+const slideWidth = slider.offsetWidth;
+
+function moveToSlide(slideIndex) {
+  sliderContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  currentSlide = slideIndex;
+}
+
+prevBtn.addEventListener('click', () => {
+  if (currentSlide > 0) {
+    moveToSlide(currentSlide - 1);
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentSlide < images.length - 1) {
+    moveToSlide(currentSlide + 1);
+  }
+});
+
+moveToSlide(0);
+
 /* Apply hover effect to arrows (optional) */
 .slider-arrow:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
