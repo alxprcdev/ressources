@@ -236,10 +236,11 @@ p {
 
 /* Style the slider section */
 .slider {
-  position: relative; /* Allows positioning of elements within the slider */
-  overflow: hidden; /* Hides overflowing content (useful for image transitions) */
-  margin: 20px auto; /* Add some margin for better presentation */
-  width: 80%; /* Define the width of the slider */
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 80%; /* Largeur initiale du slider */
+    max-width: 800px; /* Largeur maximale du slider */
 }
 
 /* Style the slider container */
