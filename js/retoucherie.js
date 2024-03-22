@@ -46,3 +46,30 @@ animerFooter();
 
 // Animer d'autres éléments de la page (optionnel)
 // ...
+const slider = document.querySelector('.slider');
+const sliderContainer = document.querySelector('.slider-container');
+const prevBtn = document.querySelector('.slider-arrow.prev');
+const nextBtn = document.querySelector('.slider-arrow.next');
+const images = sliderContainer.querySelectorAll('img');
+
+let currentSlide = 0;
+const slideWidth = slider.offsetWidth;
+
+function moveToSlide(slideIndex) {
+  sliderContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  currentSlide = slideIndex;
+}
+
+prevBtn.addEventListener('click', () => {
+  if (currentSlide > 0) {
+    moveToSlide(currentSlide - 1);
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentSlide < images.length - 1) {
+    moveToSlide(currentSlide + 1);
+  }
+});
+
+moveToSlide(0);
